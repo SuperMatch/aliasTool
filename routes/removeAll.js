@@ -10,7 +10,7 @@ function htmlEntities(str) {
 
 function removeAll(code){
     $ = cheerio.load(code, {
-        "decodeEntities": true,
+        "decodeEntities": false,
         "xmlMode": true
     });
     var aliasDict = {};
